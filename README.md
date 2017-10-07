@@ -35,7 +35,6 @@ It accepts all arguments you can give to the `dotnet cli`.
 </ItemGroup> 
  ```
 
-
 ##### No Arguments
 
 `docker run civa86/docker-dotnet-dev`
