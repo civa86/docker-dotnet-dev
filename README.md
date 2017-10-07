@@ -7,13 +7,19 @@
 
 ### Usage
 
-`docker run -v $(pwd):/app -p 5000:5000 civa86/docker-dotnet-dev <DOTNET_CLI_COMMAND>`
+`docker run -it -v $(pwd):/app -p 5000:5000 civa86/docker-dotnet-dev <DOTNET_CLI_COMMAND>`
 
 ##### .NET Core command-line interface 
 
 The container uses [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) executable as entrypoint.
 
 It accepts all arguments you can give to the `dotnet cli`.
+
+##### Bash Alias
+
+```bash
+alias dotnet-dev='docker run -it -v $(pwd):/app -p 5000:5000 civa86/dotnet-dev'
+```
 
 ### Examples
 
@@ -25,7 +31,7 @@ It accepts all arguments you can give to the `dotnet cli`.
 
  ##### Run and Watch Project 
 
- `docker run -v $(pwd):/app -p 5000:5000 civa86/docker-dotnet-dev watch run`
+ `docker run -it -v $(pwd):/app -p 5000:5000 civa86/docker-dotnet-dev watch run`
 
  Be sure to add [Microsoft.DotNet.Watcher.Tools](https://github.com/aspnet/Docs/blob/master/aspnetcore/tutorials/dotnet-watch.md) package reference to your .csproj project file
 
