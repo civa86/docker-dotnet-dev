@@ -6,5 +6,6 @@ ENV ASPNETCORE_ENVIRONMENT Development
 EXPOSE 5000/tcp
 
 WORKDIR /app
+
 ENTRYPOINT ["dotnet"]
 CMD ["--info"]
