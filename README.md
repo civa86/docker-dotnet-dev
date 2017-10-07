@@ -1,3 +1,6 @@
+
+![docker-badge](http://dockeri.co/image/civa86/docker-dotnet-dev)
+
 ## Tags
 
 - [`2.0`, `latest` (2.0/Dockerfile)](https://github.com/civa86/docker-dotnet-dev/blob/master/2.0/Dockerfile)
@@ -31,6 +34,7 @@ It accepts all arguments you can give to the `dotnet cli`.
     <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
 </ItemGroup> 
  ```
+
 
 ##### No Arguments
 
