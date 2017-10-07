@@ -1,30 +1,26 @@
-# Docker .NET Developer Environment
-
-.NET Core Debian environment for developers running in a Docker container
-
 ## Tags
 
 - [`2.0`, `latest` (2.0/Dockerfile)](https://github.com/civa86/docker-dotnet-dev/blob/master/2.0/Dockerfile)
 
-## Usage
+### Usage
 
 `docker run -v $(pwd):/app -p 5000:5000 civa86/docker-dotnet-dev <DOTNET_CLI_COMMAND>`
 
-#### .NET Core command-line interface 
+##### .NET Core command-line interface 
 
-The container has [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) executable as entrypoint.
+The container uses [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) executable as entrypoint.
 
-It accepts all arguments you can give to the `dotnet` executable.
+It accepts all arguments you can give to the `dotnet cli`.
 
-#### Examples
+### Examples
 
-###### Create a new ASP.NET Core project
+##### Create a new ASP.NET Core project
 
  `docker run -v $(pwd):/app civa86/docker-dotnet-dev new  webapi -n ExampleAspNetCore`
 
  This will create the `ExampleAspNetCore` folder inside your `pwd` directory with a working ASP.NET Core project inside.
 
- ###### Run and Watch Project 
+ ##### Run and Watch Project 
 
  `docker run -v $(pwd):/app -p 5000:5000 civa86/docker-dotnet-dev watch run`
 
@@ -35,8 +31,8 @@ It accepts all arguments you can give to the `dotnet` executable.
     <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
 </ItemGroup> 
  ```
- 
-###### NO ARGUMENTS
+
+##### No Arguments
 
 `docker run civa86/docker-dotnet-dev`
 
