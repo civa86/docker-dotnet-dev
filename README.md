@@ -1,5 +1,5 @@
 
-![docker-badge](http://dockeri.co/image/civa86/docker-dotnet-dev)
+![docker-badge](http://dockeri.co/image/civa86/dotnet-dev)
 
 ## Tags
 
@@ -9,7 +9,7 @@
 
 `docker run -it -v $(pwd):/app -p 5000:5000 civa86/docker-dotnet-dev <DOTNET_CLI_COMMAND>`
 
-##### .NET Core command-line interface 
+##### .NET Core command-line interface
 
 The container uses [dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x) executable as entrypoint.
 
@@ -29,7 +29,7 @@ alias dotnet-dev='docker run -it -v $(pwd):/app -p 5000:5000 civa86/dotnet-dev'
 
  This will create the `ExampleAspNetCore` folder inside your `pwd` directory with a working ASP.NET Core project inside.
 
- ##### Run and Watch Project 
+ ##### Run and Watch Project
 
  `docker run -it -v $(pwd):/app -p 5000:5000 civa86/docker-dotnet-dev watch run`
 
@@ -38,7 +38,7 @@ alias dotnet-dev='docker run -it -v $(pwd):/app -p 5000:5000 civa86/dotnet-dev'
  ```xml
  <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
-</ItemGroup> 
+</ItemGroup>
  ```
 
 ##### No Arguments
